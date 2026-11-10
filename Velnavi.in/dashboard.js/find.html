@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Partner - Velnavi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../dashboard.js/css/find.css">
+</head>
+
+<body>
+
+    <div class="dashboard-wrapper">
+
+        <!-- ===== SIDEBAR (dashboard jaisa hi, sirf active tab badla hai) ===== -->
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <i class="fa-solid fa-comments"></i>
+                <span>Velnavi</span>
+            </div>
+
+            <nav class="sidebar-nav">
+                <a href="../../dashboard/html/dashboard.html" class="nav-item">
+                    <i class="fa-solid fa-grip"></i>
+                    <span>Dashboard</span>
+                </a>
+                <a href="#" class="nav-item active">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <span>Find Partner</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fa-regular fa-clock"></i>
+                    <span>My Sessions</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <span>Progress</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fa-regular fa-user"></i>
+                    <span>Profile</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Settings</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <span>Logout</span>
+                </a>
+            </nav>
+
+            <p class="sidebar-footer">&copy; 2026 Velnavi</p>
+        </aside>
+
+        <!-- ===== MAIN CONTENT ===== -->
+        <main class="main-content">
+
+            <!-- Topbar -->
+            <header class="topbar">
+                <div></div>
+                <div class="topbar-right">
+                    <i class="fa-regular fa-bell topbar-bell"></i>
+                    <img src="https://i.pravatar.cc/40?img=12" alt="user" class="topbar-avatar">
+                    <div class="topbar-user">
+                        <p class="topbar-name" id="topbarName">Vidit</p>
+                        <p class="topbar-level" id="topbarLevel">Intermediate</p>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Page heading + live banner -->
+            <section class="fp-head-row">
+                <div class="fp-head-text">
+                    <h1>What would you like to practice today?</h1>
+                    <p>Choose a topic to see people who are available right now.</p>
+                </div>
+
+                <div class="partner-banner">
+                    <div class="partner-banner-text">
+                        <p class="partner-count">0 people online now</p>
+                        <p class="partner-sub">Pick any topic below to jump in</p>
+                    </div>
+                    <div class="partner-avatars">
+                        <img src="https://i.pravatar.cc/40?img=5" alt="">
+                        <img src="https://i.pravatar.cc/40?img=8" alt="">
+                        <img src="https://i.pravatar.cc/40?img=15" alt="">
+                        <span class="avatar-more">0</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Search / quick filter bar -->
+            <section class="fp-search-row">
+                <div class="fp-search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search a topic...">
+                </div>
+                <div class="fp-filter-chip active">All</div>
+                <div class="fp-filter-chip">Your Interests</div>
+                <div class="fp-filter-chip">Most Active</div>
+            </section>
+
+            <!-- Your Interests -->
+            <section class="topics-section">
+                <h2>Your Interests <span>(Based on your profile)</span></h2>
+
+                <div class="topics-grid">
+                    <div class="topic-card fp-clickable" data-topic="technology">
+                        <div class="topic-icon purple"><i class="fa-solid fa-laptop"></i></div>
+                        <div class="topic-info">
+                            <p class="topic-title">Technology</p>
+                            <p class="topic-count">0 people available</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-right fp-chevron"></i>
+                    </div>
+
+                    <div class="topic-card fp-clickable" data-topic="books">
+                        <div class="topic-icon green"><i class="fa-solid fa-book"></i></div>
+                        <div class="topic-info">
+                            <p class="topic-title">Books</p>
+                            <p class="topic-count">0 people available</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-right fp-chevron"></i>
+                    </div>
+
+                    <div class="topic-card fp-clickable" data-topic="travel">
+                        <div class="topic-icon blue"><i class="fa-solid fa-plane"></i></div>
+                        <div class="topic-info">
+                            <p class="topic-title">Travel</p>
+                            <p class="topic-count">0 people available</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-right fp-chevron"></i>
+                    </div>
+
+                    <div class="topic-card fp-clickable" data-topic="placements">
+                        <div class="topic-icon yellow"><i class="fa-solid fa-briefcase"></i></div>
+                        <div class="topic-info">
+                            <p class="topic-title">Placements &amp; Interviews</p>
+                            <p class="topic-count">0 people available</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-right fp-chevron"></i>
+                    </div>
+
+                    <div class="topic-card fp-clickable" data-topic="general">
+                        <div class="topic-icon lavender"><i class="fa-solid fa-comment-dots"></i></div>
+                        <div class="topic-info">
+                            <p class="topic-title">General Conversation</p>
+                            <p class="topic-count">0 people available</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-right fp-chevron"></i>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Other Topics -->
+            <section class="topics-section">
+                <h2>Other Topics <span>(Explore something new)</span></h2>
+
+                <div class="topics-grid">
+                    <div class="topic-card fp-clickable" data-topic="dailylife">
+                        <div class="topic-icon green"><i class="fa-solid fa-mug-hot"></i></div>
+                        <div class="topic-info">
+                            <p class="topic-title">Daily Life &amp; Casual</p>
+                            <p class="topic-count">0 people available</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-right fp-chevron"></i>
+                    </div>
+
+                    <div class="topic-card fp-clickable" data-topic="education">
+                        <div class="topic-icon blue"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <div class="topic-info">
+                            <p class="topic-title">Campus &amp; Career</p>
+                            <p class="topic-count">0 people available</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-right fp-chevron"></i>
+                    </div>
+
+                    <div class="topic-card fp-clickable" data-topic="hobbies">
+                        <div class="topic-icon yellow"><i class="fa-solid fa-shapes"></i></div>
+                        <div class="topic-info">
+                            <p class="topic-title">Hobbies</p>
+                            <p class="topic-count">0 people available</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-right fp-chevron"></i>
+                    </div>
+
+                    <div class="topic-card fp-clickable" data-topic="currentaffairs">
+                        <div class="topic-icon lavender"><i class="fa-solid fa-newspaper"></i></div>
+                        <div class="topic-info">
+                            <p class="topic-title">Current Affairs</p>
+                            <p class="topic-count">0 people available</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-right fp-chevron"></i>
+                    </div>
+
+                    <div class="topic-card fp-clickable" data-topic="health">
+                        <div class="topic-icon purple"><i class="fa-solid fa-heart-pulse"></i></div>
+                        <div class="topic-info">
+                            <p class="topic-title">Health &amp; Fitness</p>
+                            <p class="topic-count">0 people available</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-right fp-chevron"></i>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tip banner -->
+            <div class="daily-tip">
+                <i class="fa-regular fa-lightbulb"></i>
+                <p><strong>Tip:</strong> More people means more chances to practice and improve!</p>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="../js/find-partner.js"></script>
+</body>
+
+</html>

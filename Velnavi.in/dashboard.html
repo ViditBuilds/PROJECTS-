@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Velnavi</title>
+  <!-- Google Fonts - Poppins use kiya kyunki modern aur clean lagta hai headings ke liye -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Icons ke liye Font Awesome use kiya - halka aur easy hai -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="../dashboard.js/css/dashboard.css">
+</head>
+<body>
+
+  <div class="dashboard-wrapper">
+
+    <!-- ===== SIDEBAR ===== -->
+    <aside class="sidebar">
+      <div class="sidebar-logo">
+        <i class="fa-solid fa-comments"></i>
+        <span>Velnavi</span>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a href="#" class="nav-item active">
+          <i class="fa-solid fa-grip"></i>
+          <span>Dashboard</span>
+        </a>
+        <a href="../dashboard.js/find.html" class="nav-item">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <span>Find Partner</span>
+        </a>
+        <a href="#" class="nav-item">
+          <i class="fa-regular fa-clock"></i>
+          <span>My Sessions</span>
+        </a>
+        <a href="#" class="nav-item">
+          <i class="fa-solid fa-chart-simple"></i>
+          <span>Progress</span>
+        </a>
+        <a href="#" class="nav-item">
+          <i class="fa-regular fa-user"></i>
+          <span>Profile</span>
+        </a>
+        <a href="#" class="nav-item">
+          <i class="fa-solid fa-gear"></i>
+          <span>Settings</span>
+        </a>
+        <a href="#" class="nav-item">
+          <i class="fa-solid fa-right-from-bracket"></i>
+          <span>Logout</span>
+        </a>
+      </nav>
+
+      <p class="sidebar-footer">&copy; 2026 Velnavi</p>
+    </aside>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main class="main-content">
+
+      <!-- Top bar: notification + profile -->
+      <header class="topbar">
+        <div></div>
+        <div class="topbar-right">
+          <i class="fa-regular fa-bell topbar-bell"></i>
+          <img src="https://i.pravatar.cc/40?img=12" alt="user" class="topbar-avatar" id="dashboardAvatar">
+          <div class="topbar-user">
+            <p class="topbar-name" id="topbarName" >Vidit</p>
+            <p class="topbar-level" id="topbarLevel">Intermediate</p>
+          </div>
+        </div>
+      </header>
+
+      <!-- Welcome + Find Partner banner -->
+      <section class="welcome-row">
+        <div class="welcome-text">
+         <h1>Welcome back, <span id="welcomeName">Vidit</span> 👋</h1>
+          <p>Let's practice today and become a better English speaker.</p>
+        </div>
+
+        <div class="partner-banner">
+          <div class="partner-banner-text">
+            <p class="partner-count">0 people are practicing now</p>
+            <p class="partner-sub">Find a partner and start a conversation</p>
+            <button class="btn-primary">Find Partner <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+          <div class="partner-avatars">
+            <img src="https://i.pravatar.cc/40?img=5" alt="">
+            <img src="https://i.pravatar.cc/40?img=8" alt="">
+            <img src="https://i.pravatar.cc/40?img=15" alt="">
+            <span class="avatar-more">+9</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stats cards -->
+      <section class="stats-row">
+        <div class="stat-card">
+          <div class="stat-icon purple"><i class="fa-solid fa-user-group"></i></div>
+          <div>
+            <p class="stat-label">Conversations</p>
+            <h3 class="stat-value">0</h3>
+            <p class="stat-change up">0 this week</p>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon green"><i class="fa-solid fa-waveform"></i></div>
+          <div>
+            <p class="stat-label">Practice Minutes</p>
+            <h3 class="stat-value">0 min</h3>
+            <p class="stat-change up">0 this week</p>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon orange"><i class="fa-solid fa-fire"></i></div>
+          <div>
+            <p class="stat-label">Day Streak</p>
+            <h3 class="stat-value">0 days</h3>
+            <p class="stat-change orange-text">Keep it up! 🔥</p>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon blue"><i class="fa-solid fa-trophy"></i></div>
+          <div>
+            <p class="stat-label">Your Level</p>
+            <h3 class="stat-value" id="dashboardLevel">Intermediate</h3>
+            <p class="stat-change blue-text" id="nextLevel">Next: Advanced</p>
+            
+          </div>
+        </div>
+      </section>
+
+      <!-- Practice by Topic -->
+      <section class="topics-section">
+        <h2>Practice by Topic <span>(Based on your interests)</span></h2>
+
+        <div class="topics-grid">
+          <div class="topic-card">
+            <div class="topic-icon purple"><i class="fa-solid fa-laptop"></i></div>
+            <div class="topic-info">
+              <p class="topic-title">Technology</p>
+              <p class="topic-count">0 people available</p>
+              <button class="btn-secondary">Practice Now <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </div>
+
+          <div class="topic-card">
+            <div class="topic-icon green"><i class="fa-solid fa-book"></i></div>
+            <div class="topic-info">
+              <p class="topic-title">Books</p>
+              <p class="topic-count">0 people available</p>
+              <button class="btn-secondary">Practice Now <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </div>
+
+          <div class="topic-card">
+            <div class="topic-icon blue"><i class="fa-solid fa-plane"></i></div>
+            <div class="topic-info">
+              <p class="topic-title">Travel</p>
+              <p class="topic-count">0 people available</p>
+              <button class="btn-secondary">Practice Now <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </div>
+
+          <div class="topic-card">
+            <div class="topic-icon yellow"><i class="fa-solid fa-briefcase"></i></div>
+            <div class="topic-info">
+              <p class="topic-title">Placements &amp; Interviews</p>
+              <p class="topic-count">0 people available</p>
+              <button class="btn-secondary">Practice Now <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </div>
+
+          <div class="topic-card">
+            <div class="topic-icon lavender"><i class="fa-solid fa-comment-dots"></i></div>
+            <div class="topic-info">
+              <p class="topic-title">General Conversation</p>
+              <p class="topic-count">0 people available</p>
+              <button class="btn-secondary">Practice Now <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bottom row: Today's Goal, Weekly Goal, Recent Sessions -->
+      <section class="bottom-row">
+
+        <!-- Today's Goal - circular progress -->
+        <div class="bottom-card goal-card">
+          <h3>Today's Goal</h3>
+          <div class="circle-progress" id="todayGoalCircle" data-percent="60">
+            <svg viewBox="0 0 120 120">
+              <circle class="circle-bg" cx="60" cy="60" r="52"></circle>
+              <circle class="circle-fill" cx="60" cy="60" r="52" id="circleFill"></circle>
+            </svg>
+            <div class="circle-text">
+              <span class="circle-min">0</span>
+              <span class="circle-unit">min</span>
+            </div>
+          </div>
+          <p class="goal-target">Daily target: 10-30 minutes</p>
+        </div>
+
+        <!-- Weekly Goal - progress bar + day dots -->
+        <div class="bottom-card">
+          <h3>Weekly Goal</h3>
+          <p class="weekly-time">0 <span>/ 0h This Week</span></p>
+
+          <div class="week-dots">
+            <span class="dot filled">M</span>
+            <span class="dot filled">T</span>
+            <span class="dot filled">W</span>
+            <span class="dot filled">T</span>
+            <span class="dot filled">F</span>
+            <span class="dot filled">S</span>
+            <span class="dot">S</span>
+          </div>
+
+          <p class="weekly-msg">Great progress! Keep it going 🔥</p>
+        </div>
+
+        <!-- Recent Sessions -->
+        <div class="bottom-card sessions-card">
+          <div class="sessions-head">
+            <h3>Recent Sessions</h3>
+            <a href="#" class="view-all">View all →</a>
+          </div>
+
+          <div class="session-item">
+            <img src="https://i.pravatar.cc/40?img=33" alt="">
+            <div class="session-info">
+              <p class="session-name">Rohan</p>
+              <p class="session-topic">Technology</p>
+            </div>
+            <div class="session-meta">
+              <p>0 min</p>
+              <span>Today</span>
+            </div>
+          </div>
+
+          <div class="session-item">
+            <img src="https://i.pravatar.cc/40?img=45" alt="">
+            <div class="session-info">
+              <p class="session-name">Meera</p>
+              <p class="session-topic">Travel</p>
+            </div>
+            <div class="session-meta">
+              <p>0 min</p>
+              <span>Yesterday</span>
+            </div>
+          </div>
+
+          <div class="session-item">
+            <img src="https://i.pravatar.cc/40?img=51" alt="">
+            <div class="session-info">
+              <p class="session-name">Arjun</p>
+              <p class="session-topic">Books</p>
+            </div>
+            <div class="session-meta">
+              <p>0 min</p>
+              <span> Data appear here </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Daily Tip banner -->
+      <div class="daily-tip">
+        <i class="fa-regular fa-lightbulb"></i>
+        <p><strong>Daily Tip:</strong> Speak a little every day, even if it's just for a few minutes. Small steps lead to big fluency!</p>
+      </div>
+
+    </main>
+  </div>
+
+  <script src="../dashboard.js/js/dashboard.js"></script>
+</body>
+</html>

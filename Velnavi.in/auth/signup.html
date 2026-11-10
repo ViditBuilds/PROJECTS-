@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velnavi - Create Your Account</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/signup.css">
+     <link rel="shortcut icon" href="../assets/logo.jpg" type="image/x-icon">
+</head>
+
+<body> 
+
+    
+    <a href="../auth/login.html" class="back-btn">
+        <span class="back-arrow">&#8592;</span> Back
+    </a> 
+
+     <a href="../setup.html" class="next-btn">
+        Skip : Setup Profile <span class="next-arrow">&#8594;</span>
+    </a>
+
+    <div class="auth-page">
+
+        <!-- Decorative background blobs -->
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+
+        <div class="auth-card">
+
+            <!-- LEFT SIDE: Form -->
+            <div class="auth-left">
+
+                <div class="auth-logo">
+                     <img src="../assets/logo.jpg" alt="Velnavi Logo" class="logo-img">
+                    <span class="logo-text">Velnavi</span>
+                </div>
+
+                <div class="auth-badge">START FOR FREE</div>
+                <h1 class="auth-heading">Create new account<span class="dot">.</span></h1>
+                <p class="auth-subtext">Join Velnavi and start practicing English with real people today.</p>
+
+                <form class="auth-form" id="signupForm">
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" placeholder="e.g. Vidit" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" placeholder="e.g. Sharma" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="you@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Create a password" required>
+                    </div>
+
+                    <div class="form-buttons">
+                        <a href="login.html" class="btn btn-secondary">Already have an account?</a>
+                        <button type="submit" class="btn btn-primary">Create Account</button>
+                    </div>
+
+                </form>
+
+                <p class="auth-footer-text">
+                    Already a member? <a href="login.html" class="auth-link">Log in</a>
+                </p>
+
+                <!-- ============================================================
+                     TEMPORARY DEV LINK - sirf testing ke liye, MVP complete hone
+                     ke baad ye poora <p> tag delete kar dena.
+                     Bina form bhare seedha setup-profile.html pe le jaata hai.
+                     ============================================================ -->
+                <p class="dev-skip-text">
+                    <a href="../setup.html" id="devSkipLink" class="dev-skip-link">Skip to Setup Profile  &#8594;</a>
+                </p>
+
+                <!-- ============================================
+                     TEMPORARY - sirf development/testing ke liye.
+                     MVP complete hone par ye button hata dena.
+                     ============================================ -->
+                <a href="../setup.html" class="dev-skip-btn" style="color: white;">
+                     Skip to Setup 
+                </a>
+
+            </div>
+            <!-- LEFT SIDE END -->
+
+            <!-- RIGHT SIDE: Image -->
+            <div class="auth-right">
+                <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800&auto=format&fit=crop&q=60"
+                    alt="People practicing English together" class="auth-image">
+                <div class="auth-image-overlay"></div>
+                <div class="auth-quote">
+                    "Real People. Real Conversations. Real Growth."
+                </div>
+            </div>
+            <!-- RIGHT SIDE END -->
+
+        </div>
+
+    </div>
+
+    <script src="../homepage.js/signup.js"></script>
+</body>
+
+</html>

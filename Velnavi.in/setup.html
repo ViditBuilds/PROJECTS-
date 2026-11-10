@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Velnavi - Setup Your Profile</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/setup.css">
+</head>
+
+<body>
+
+    <!-- Back Button -->
+    <a href="../CODE/auth/signup.html" class="back-btn">
+        <span class="back-arrow">&#8592;</span>
+        Back
+    </a>
+     <a href="../CODE/interest.html" class="next-btn">
+        Skip <span class="next-arrow">&#8594;</span>
+    </a>
+
+
+    <div class="setup-page">
+
+        <!-- Decorative Background Blobs -->
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+
+
+        <div class="setup-card">
+
+            <!-- ================= LEFT SIDE ================= -->
+
+            <div class="setup-left">
+
+                <!-- Logo -->
+                <div class="setup-logo">
+                    <img src="../CODE/assets/logo.jpg" alt="Velnavi Logo">
+                    <span class="logo-text">Velnavi</span>
+                </div>
+
+
+                <!-- Progress Steps -->
+                <div class="progress-steps">
+
+                    <div class="progress-step active">
+                        <div class="step-circle">1</div>
+                        <span class="step-label">Profile</span>
+                    </div>
+
+                    <div class="step-line"></div>
+
+                    <div class="progress-step">
+                        <div class="step-circle">2</div>
+                        <span class="step-label">Interests</span>
+                    </div>
+
+                    <div class="step-line"></div>
+
+                    <div class="progress-step">
+                        <div class="step-circle">3</div>
+                        <span class="step-label">Dashboard</span>
+                    </div>
+
+                </div>
+
+
+                <!-- Left Content -->
+                <h2 class="setup-left-heading">
+                    Let's get to know you<span class="dot">.</span>
+                </h2>
+
+                <p class="setup-left-text">
+                    A few quick details help us match you with the right
+                    practice partner - someone at your level, speaking
+                    about topics you actually care about.
+                </p>
+
+
+                <!-- Illustration -->
+                <div class="setup-illustration">
+
+                    <img src="../CODE/assets/track.avif" alt="Person setting up their Velnavi profile">
+
+                    <div class="illustration-overlay"></div>
+
+                </div>
+
+
+                <!-- Why This Matters -->
+                <div class="why-matters">
+                    <p class="why-matters-item">
+                        <span class="check-icon">&#10003;</span> Better matches, faster
+                    </p>
+                    <p class="why-matters-item">
+                        <span class="check-icon">&#10003;</span> Talk about topics you love
+                    </p>
+                    <p class="why-matters-item">
+                        <span class="check-icon">&#10003;</span> Practice at your comfort level
+                    </p>
+                </div>
+
+
+                <!-- Tip -->
+                <div class="setup-tip">
+
+                    <span class="tip-icon">&#128161;</span>
+
+                    <p>
+                        Tip: Be honest about your level - it helps us find
+                        you the perfect conversation partner, not the
+                        toughest one.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- ================= LEFT SIDE END ================= -->
+
+
+            <!-- ================= RIGHT SIDE ================= -->
+
+            <div class="setup-right">
+
+                <div class="setup-badge">
+                    STEP 1 OF 3
+                </div>
+
+                <h1 class="setup-heading">
+                    Tell us about yourself
+                </h1>
+
+                <p class="setup-subtext">
+                    This helps us find the right people for you.
+                </p>
+
+
+                <!-- ================= FORM ================= -->
+
+                <form class="setup-form" id="setupProfileForm">
+
+
+                    <!-- Avatar Upload -->
+                    <div class="avatar-upload">
+
+                        <div class="avatar-circle" id="avatarPreview">
+                            <span class="avatar-placeholder">
+                                &#128100;
+                            </span>
+                        </div>
+
+                        <label for="avatarInput" class="avatar-upload-btn">
+                            <span class="camera-icon">&#128247;</span>
+                            Upload Photo
+                        </label>
+
+                        <button type="button" class="avatar-remove-btn" id="removePhotoBtn" style="display: none;">
+                            Remove Photo
+                        </button>
+
+                        <input type="file" id="avatarInput" accept="image/*" hidden>
+
+                    </div>
+
+
+                    <!-- Full Name -->
+                    <div class="form-group">
+
+                        <label for="fullName">
+                            Your Name
+                        </label>
+
+                        <input type="text" id="fullName" name="fullName" placeholder="Enter your name"
+                            autocomplete="name" maxlength="50" required>
+
+                    </div>
+
+                    <!-- Age Group -->
+                    <div class="form-group">
+
+                        <label for="ageGroup">
+                            Age Group
+                        </label>
+
+                        <select id="ageGroup" name="ageGroup" required>
+
+                            <option value="" disabled selected>
+                                Select your age group
+                            </option>
+
+                            <option value="under18">
+                                Under 18
+                            </option>
+
+                            <option value="18-24">
+                                18–24
+                            </option>
+
+                            <option value="25-34">
+                                25–34
+                            </option>
+
+                            <option value="35plus">
+                                35+
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- Native Language -->
+                    <div class="form-group">
+
+                        <label for="nativeLanguage">
+                            Native Language
+                        </label>
+
+                        <select id="nativeLanguage" name="nativeLanguage" required>
+
+                            <option value="" disabled selected>
+                                Select your native language
+                            </option>
+
+                            <option value="english">
+                                English
+                            </option>
+
+                            <option value="hindi">
+                                Hindi
+                            </option>
+
+                            <option value="punjabi">
+                                Punjabi
+                            </option>
+
+                            <option value="haryanvi">
+                                Haryanvi
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- Learning Language -->
+                    <div class="form-group">
+
+                        <label for="learningLanguage">
+                            Learning Language
+                        </label>
+
+                        <select id="learningLanguage" name="learningLanguage" required>
+
+                            <option value="english" selected>
+                                English
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- English Level -->
+                    <div class="form-group">
+
+                        <label>
+                            Your English Level
+                        </label>
+
+                        <div class="level-options">
+
+                            <!-- Beginner -->
+                            <button type="button" class="level-btn" data-level="beginner">
+
+                                <span class="level-emoji">
+                                    &#127793;
+                                </span>
+
+                                <span class="level-name">
+                                    Beginner
+                                </span>
+
+                                <span class="level-desc">
+                                    Just starting out
+                                </span>
+
+                            </button>
+
+
+                            <!-- Elementary -->
+                            <button type="button" class="level-btn" data-level="elementary">
+
+                                <span class="level-emoji">
+                                    &#127807;
+                                </span>
+
+                                <span class="level-name">
+                                    Elementary
+                                </span>
+
+                                <span class="level-desc">
+                                    Know basic English , need more practice 
+                                </span>
+
+                            </button>
+
+
+                            <!-- Intermediate -->
+                            <button type="button" class="level-btn selected" data-level="intermediate">
+
+                                <span class="level-emoji">
+                                    &#127793;
+                                </span>
+
+                                <span class="level-name">
+                                    Intermediate
+                                </span>
+
+                                <span class="level-desc">
+                                    Can hold a conversation , want more practice 
+                                </span>
+
+                            </button>
+
+
+                            <!-- Advanced -->
+                            <button type="button" class="level-btn" data-level="advanced">
+
+                                <span class="level-emoji">
+                                    &#127794;
+                                </span>
+
+                                <span class="level-name">
+                                    Advanced
+                                </span>
+
+                                <span class="level-desc">
+                                    Fluent , want to help others for their communication 
+                                </span>
+
+                            </button>
+
+                        </div>
+
+
+                        <input type="hidden" id="selectedLevel" name="englishLevel" value="intermediate">
+
+                    </div>
+
+
+                    <!-- Learning Goal -->
+                    <div class="form-group">
+
+                        <label for="goal">
+                            Learning Goal
+                        </label>
+
+                        <select id="goal" name="goal" required>
+
+                            <option value="" disabled selected>
+                                What's your main goal?
+                            </option>
+
+                            <option value="placement">
+                                Crack placement & job interviews
+                            </option>
+
+                            <option value="confidence">
+                                Build everyday speaking confidence
+                            </option>
+
+                            <option value="career">
+                                Improve professional communication
+                            </option>
+
+                            <option value="travel">
+                                Prepare for travel abroad
+                            </option>
+
+                            <option value="connections">
+                                Meet people & make new connections
+                            </option>
+
+                            <option value="fun">
+                                Just for fun
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- Continue Button -->
+
+
+
+                    <button type="submit" class="btn-continue">
+                        Save &amp; Continue
+                        <span class="arrow">&#8594;</span>
+                    </button>
+
+                </form>
+
+            </div>
+
+            <!-- ================= RIGHT SIDE END ================= -->
+
+        </div>
+
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="../CODE/homepage.js/setup.js"></script>
+
+</body>
+
+</html>

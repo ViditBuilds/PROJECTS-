@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velnavi - Features</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/features.css">
+    <link rel="shortcut icon" href="assets/logo.jpg" type="image/x-icon">
+</head>
+
+<body>
+
+   
+
+
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="nav-logo">
+                <img src="../CODE/assets/logo.jpg" alt="Velnavi Logo" class="logo-img">
+                <span class="logo-text">Velnavi</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../CODE/index.html" class="nav-link">Home</a></li>
+                <li><a href="../CODE/index.html" class="nav-link">How It Works</a></li>
+                <li><a href="features.html" class="nav-link active">Features</a></li>
+                <!-- <li><a href="#" class="nav-link">Community</a></li> -->
+                <!-- <li><a href="#" class="nav-link">Pricing</a></li> -->
+                <li><a href="#" class="nav-link" id="aboutbtn">About Us</a></li>
+            </ul>
+            <div class="nav-right">
+                <div class="nav-lang">
+                    <span class="lang-icon">&#127760;</span>
+                    <span>English</span>
+                    <span class="lang-arrow">&#9662;</span>
+                </div>
+                <a href="../auth/login.html" class="btn btn-primary nav-login-btn">Login / Sign Up</a>
+            </div>
+            <div class="nav-hamburger" id="navHamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <ul class="nav-links-mobile" id="navLinksMobile">
+            <li><a href="../index.html" class="nav-link">Home</a></li>
+            <li><a href="#" class="nav-link">How It Works</a></li>
+            <li><a href="features.html" class="nav-link">Features</a></li>
+            <li><a href="#" class="nav-link">Community</a></li>
+            <li><a href="#" class="nav-link">Pricing</a></li>
+            <li><a href="#" class="nav-link">About Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Custom cursor -->
+    <!-- <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div> -->
+
+    <!-- Back button -->
+    <a href="../index.html" class="back-btn">
+        <span class="back-arrow">&#8592;</span> Back
+    </a>
+
+    <!-- ========== PAGE HEADER ========== -->
+    <section class="features-hero">
+        <div class="features-hero-container">
+            <div class="features-badge">Features</div>
+            <h1 class="features-heading">Everything you need to speak English confidently</h1>
+            <p class="features-subtext">
+                Velnavi is built around one simple idea - the fastest way to improve your
+                spoken English is by actually speaking it, with real people, in real
+                conversations. Here's everything Velnavi offers to make that happen.
+            </p>
+        </div>
+    </section>
+
+    <!-- ========== SNAKE FEATURES PATH START ========== -->
+    <!-- Ye ab CSS Grid based timeline hai: beech mein ek seedhi dashed line hai,
+         aur har dot us line ke EXACT center pe grid ki madad se baithta hai -
+         chahe card ki height kuch bhi ho, dot kabhi line se hatega nahi. -->
+    <section class="snake-section">
+        <div class="snake-container">
+
+            <svg id="snakeLine" class="snake-line-svg"></svg>
+
+            <!-- FEATURE 1 -->
+            <div class="snake-item" data-animate>
+                <div class="snake-card snake-card-left">
+                    <div class="snake-icon">&#127908;</div>
+                    <h3 class="snake-title">Voice Conversations</h3>
+                    <p class="snake-desc">
+                        Talk to real people through 20-minute voice calls - no typing, no
+                        text chat. This is where real speaking confidence is built.
+                    </p>
+                </div>
+                <div class="snake-dot">1</div>
+                <div class="snake-card-empty"></div>
+            </div>
+
+            <!-- FEATURE 2 -->
+            <div class="snake-item" data-animate>
+                <div class="snake-card-empty"></div>
+                <div class="snake-dot">2</div>
+                <div class="snake-card snake-card-right">
+                    <div class="snake-icon">&#129309;</div>
+                    <h3 class="snake-title">Smart Matching</h3>
+                    <p class="snake-desc">
+                        We match you with a partner based on your English level and the
+                        topic you choose, so every conversation feels like a good fit.
+                    </p>
+                </div>
+            </div>
+
+            <!-- FEATURE 3 -->
+            <div class="snake-item" data-animate>
+                <div class="snake-card snake-card-left">
+                    <div class="snake-icon">&#128172;</div>
+                    <h3 class="snake-title">5 Conversation Topics</h3>
+                    <p class="snake-desc">
+                        Choose from Interview Prep, Daily Life & Casual, Campus & Career,
+                        Current Affairs, or Free Talk - practice what matters to you.
+                    </p>
+                </div>
+                <div class="snake-dot">3</div>
+                <div class="snake-card-empty"></div>
+            </div>
+
+            <!-- FEATURE 4 -->
+            <div class="snake-item" data-animate>
+                <div class="snake-card-empty"></div>
+                <div class="snake-dot">4</div>
+                <div class="snake-card snake-card-right">
+                    <div class="snake-icon">&#128337;</div>
+                    <h3 class="snake-title">Daily Practice Window</h3>
+                    <p class="snake-desc">
+                        Every day from 6-8 PM, Velnavi opens for live matching - so
+                        everyone shows up at the same time and real connections happen.
+                    </p>
+                </div>
+            </div>
+
+            <!-- FEATURE 5 -->
+            <div class="snake-item" data-animate>
+                <div class="snake-card snake-card-left">
+                    <div class="snake-icon">&#128200;</div>
+                    <h3 class="snake-title">Progress Tracking</h3>
+                    <p class="snake-desc">
+                        See your total conversations, minutes practiced, and daily streak
+                        - so you can watch your consistency and growth over time.
+                    </p>
+                </div>
+                <div class="snake-dot">5</div>
+                <div class="snake-card-empty"></div>
+            </div>
+
+            <!-- FEATURE 6 -->
+            <div class="snake-item" data-animate>
+                <div class="snake-card-empty"></div>
+                <div class="snake-dot">6</div>
+                <div class="snake-card snake-card-right">
+                    <div class="snake-icon">&#128737;</div>
+                    <h3 class="snake-title">Safety First</h3>
+                    <p class="snake-desc">
+                        Block and report any user instantly. Velnavi is built to be a
+                        respectful, safe space for everyone to practice without worry.
+                    </p>
+                </div>
+            </div>
+
+            <!-- FEATURE 7 -->
+            <div class="snake-item" data-animate>
+                <div class="snake-card snake-card-left">
+                    <div class="snake-icon">&#128153;</div>
+                    <h3 class="snake-title">Beginner-Friendly</h3>
+                    <p class="snake-desc">
+                        No judgment, just practice. Whether you're just starting out or
+                        already confident, Velnavi meets you exactly where you are.
+                    </p>
+                </div>
+                <div class="snake-dot">7</div>
+                <div class="snake-card-empty"></div>
+            </div>
+
+            <!-- FEATURE 8 -->
+            <div class="snake-item" data-animate>
+                <div class="snake-card-empty"></div>
+                <div class="snake-dot">8</div>
+                <div class="snake-card snake-card-right">
+                    <div class="snake-icon">&#127873;</div>
+                    <h3 class="snake-title">100% Free</h3>
+                    <p class="snake-desc">
+                        Every feature is completely free to use during our launch phase -
+                        no hidden costs, no premium walls. Just practice.
+                    </p>
+                </div>
+            </div>
+
+            <!-- FEATURE 9 -->
+            <div class="snake-item last-item" data-animate>
+                <div class="snake-card snake-card-left">
+                    <div class="snake-icon">&#127891;</div>
+                    <h3 class="snake-title">Made for Placement Prep</h3>
+                    <p class="snake-desc">
+                        Built especially for students preparing for interviews and
+                        placements - practice exactly the kind of English you'll need.
+                    </p>
+                </div>
+                <div class="snake-dot">9</div>
+                <div class="snake-card-empty"></div>
+            </div>
+
+        </div>
+    </section>
+    <!-- ========== SNAKE FEATURES PATH END ========== -->
+
+    <!-- ========== CTA AT BOTTOM ========== -->
+    <section class="features-cta">
+        <div class="features-cta-container">
+            <h2>Ready to start practicing?</h2>
+            <p>Join Velnavi today - it's free.</p>
+            <a href="../CODE/auth/login.html" class="btn-features-cta">
+                Get Started - It's Free <span class="arrow">&#8594;</span>
+            </a>
+        </div>
+    </section>
+
+    <script src="../CODE/homepage.js/features.js"></script> 
+    <script src="../CODE/homepage.js/about.js"></script>
+</body>
+
+</html>

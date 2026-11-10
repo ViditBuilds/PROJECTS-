@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velnavi - Your Interests</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../CODE/css/interest.css">
+    <link rel="shortcut icon" href="../CODE/assets/logo.jpg" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- Back Button -->
+    <a href="../CODE/setup.html" class="back-btn">
+        <span class="back-arrow">&#8592;</span> Back
+    </a>
+
+    <div class="setup-page">
+
+        <!-- Decorative Background Blobs -->
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+
+        <div class="setup-card">
+
+            <!-- ================= LEFT SIDE (same as Setup Profile) ================= -->
+            <div class="setup-left">
+
+                <!-- Logo -->
+                <div class="setup-logo">
+                    <img src="../CODE/assets/logo.jpg" alt="Velnavi Logo">
+                    <span class="logo-text">Velnavi</span>
+                </div>
+
+                <!-- Progress Steps - JS dynamically "completed"/"active" class add karega -->
+                <div class="progress-steps">
+
+                    <div class="progress-step" id="step1">
+                        <div class="step-circle" id="step1Circle">1</div>
+                        <span class="step-label">Profile</span>
+                    </div>
+
+                    <div class="step-line" id="line1"></div>
+
+                    <div class="progress-step active" id="step2">
+                        <div class="step-circle">2</div>
+                        <span class="step-label">Interests</span>
+                    </div>
+
+                    <div class="step-line"></div>
+
+                    <div class="progress-step" id="step3">
+                        <div class="step-circle">3</div>
+                        <span class="step-label">Dashboard</span>
+                    </div>
+
+                </div>
+
+                <!-- Left Content -->
+                <h2 class="setup-left-heading">
+                    What are you into<span class="dot">?</span>
+                </h2>
+
+                <p class="setup-left-text">
+                    Pick a few things you enjoy talking about - it helps us
+                    match you with partners who share similar interests, so
+                    conversations feel natural, not forced.
+                </p>
+
+                <!-- Illustration -->
+                <div class="setup-illustration">
+                    <img src="../CODE/assets/track.avif" alt="People chatting about shared interests">
+                    <div class="illustration-overlay"></div>
+                </div>
+
+                <!-- Why This Matters -->
+                <div class="why-matters">
+                    <p class="why-matters-item">
+                        <span class="check-icon">&#10003;</span> Better matches, faster
+                    </p>
+                    <p class="why-matters-item">
+                        <span class="check-icon">&#10003;</span> Talk about topics you love
+                    </p>
+                    <p class="why-matters-item">
+                        <span class="check-icon">&#10003;</span> Practice at your comfort level
+                    </p>
+                </div>
+
+                <!-- Tip -->
+                <div class="setup-tip">
+                    <span class="tip-icon">&#128161;</span>
+                    <p>
+                        Tip: Pick at least 3 interests - more choices mean
+                        better and faster matches with the right people.
+                    </p>
+                </div>
+
+            </div>
+            <!-- ================= LEFT SIDE END ================= -->
+
+            <!-- ================= RIGHT SIDE (new content) ================= -->
+            <div class="setup-right">
+
+                <div class="setup-badge">STEP 2 OF 3</div>
+                <h1 class="setup-heading">What are your interests?</h1>
+                <p class="setup-subtext">Select a few topics you'd enjoy talking about.</p>
+
+                <form class="interests-form" id="interestsForm">
+
+                    <div class="interest-grid">
+
+                        <button type="button" class="interest-chip" data-interest="travel">
+                            <span class="chip-emoji"></span> Travel
+                        </button>
+
+                        <!-- <button type="button" class="interest-chip" data-interest="movies">
+                            <span class="chip-emoji">&#127916;</span> Movies
+                        </button> -->
+
+                        <!-- <button type="button" class="interest-chip" data-interest="music">
+                            <span class="chip-emoji">&#127925;</span> Music
+                        </button> -->
+
+                        <button type="button" class="interest-chip" data-interest="technology">
+                            <span class="chip-emoji"></span> Technology
+                        </button>
+
+                        <button type="button" class="interest-chip" data-interest="business">
+                            <span class="chip-emoji"></span> Build speaking confidence
+                        </button>
+                        <!-- 
+                        <button type="button" class="interest-chip" data-interest="sports">
+                            <span class="chip-emoji"></span> Build Confidence 
+                        </button> -->
+
+                        <!-- <button type="button" class="interest-chip" data-interest="cooking">
+                            <span class="chip-emoji">&#127859;</span> Cooking
+                        </button> -->
+
+                        <!-- <button type="button" class="interest-chip" data-interest="gaming">
+                            <span class="chip-emoji"></span> Gaming
+                        </button> -->
+
+                        <button type="button" class="interest-chip" data-interest="books">
+                            <span class="chip-emoji"></span> Books
+                        </button>
+                        <!-- 
+                        <button type="button" class="interest-chip" data-interest="art">
+                            <span class="chip-emoji">&#127912;</span> Art
+                        </button> -->
+
+                        <button type="button" class="interest-chip" data-interest="placements">
+                            <span class="chip-emoji"></span> Placements &amp; Interviews
+                        </button>
+                        <!-- 
+                        <button type="button" class="interest-chip" data-interest="currentaffairs">
+                            <span class="chip-emoji"></span> Current Affairs
+                        </button> -->
+
+                    </div>
+
+                    <!-- Daily Practice Time -->
+                    <div class="time-section">
+                        <h3 class="time-heading">How much time daily?</h3>
+                        <p class="time-subtext">Select your daily practice time</p>
+
+                        <div class="time-options" id="timeOptions">
+
+                            <button type="button" class="time-btn" data-time="5-10">
+                                <span class="radio-circle"></span>
+                                5-10 Minutes
+                            </button>
+
+                            <button type="button" class="time-btn" data-time="10-30">
+                                <span class="radio-circle"></span>
+                                10-30 Minutes
+                            </button>
+
+                            <button type="button" class="time-btn" data-time="20-30">
+                                <span class="radio-circle"></span>
+                                20-30 Minutes
+                            </button>
+
+                            <button type="button" class="time-btn" data-time="30plus">
+                                <span class="radio-circle"></span>
+                                30+ Minutes
+                            </button>
+
+                        </div>
+
+                        <input type="hidden" id="selectedTime" value="">
+                    </div>
+
+                    <p class="selected-count" id="selectedCount">0 selected</p>
+
+                    <button type="submit" class="btn-continue">
+                        Continue <span class="arrow">&#8594;</span>
+                    </button> 
+
+
+                    <!-- <a href="../CODE/dashboard.js/dashboard.html" class="btn-continue" style="text-decoration: none;">
+                        Continue
+                        <span class="arrow">&#8594</span>
+                    </a> -->
+
+                </form>
+
+            </div>
+            <!-- ================= RIGHT SIDE END ================= -->
+
+        </div>
+
+    </div>
+
+    <script src="../CODE/homepage.js/interest.js"></script>
+</body>
+
+</html>

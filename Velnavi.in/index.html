@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velnavi </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="assets/logo.jpg" type="image/x-icon"> 
+    <link rel="stylesheet" href="css/bottom.css">
+</head>
+
+<body> 
+
+    <!-- <div class="cursor-dot"></div>
+<div class="cursor-ring"></div> -->
+
+    <!-- <button class="back-btn" onclick="window.history.back()">
+    <span class="back-arrow">&#8592;</span> Back
+</button> -->
+
+    <!-- ========== NAVBAR START ========== -->
+    <nav class="navbar">
+        <div class="navbar-container">
+
+            <div class="nav-logo">
+                <img src="assets/logo.jpg" alt="Velnavi Logo" class="logo-img">
+                <span class="logo-text">Velnavi</span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#" class="nav-link active">Home</a></li>
+              <li><a href="#How-It-Works" class="nav-link">How It Works</a></li>
+                <li><a href="features.html" class="nav-link">Features</a></li>
+                <!-- <li><a href="#" class="nav-link">Community</a></li> -->
+                <!-- <li><a href="#" class="nav-link">Pricing</a></li> -->
+                <li><a href="#" class="nav-link" id="aboutbtn">About Us</a></li>
+            </ul>
+
+            <div class="nav-right">
+                <div class="nav-lang">
+                    <span class="lang-icon">&#127760;</span>
+                    <span>English</span>
+                    <span class="lang-arrow">&#9662;</span>
+                </div>
+                <a href="auth/login.html" class="btn btn-primary nav-login-btn">Login / Sign Up</a>
+            </div>
+
+            <div class="nav-hamburger" id="navHamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </div>
+
+        <ul class="nav-links-mobile" id="navLinksMobile">
+            <li><a href="#" class="nav-link">Home</a></li>
+            <li><a href="#How-It-Works" class="nav-link">How It Works</a></li>
+            <li><a href="features.html" class="nav-link">Features</a></li>
+            <li><a href="#" class="nav-link">Community</a></li>
+            <li><a href="#" class="nav-link">Pricing</a></li>
+            <li><a href="#" class="nav-link">About Us</a></li>
+        </ul>
+    </nav>
+    <!-- ========== NAVBAR END ========== -->
+
+    <!-- ========== HERO SECTION START ========== -->
+    <section class="hero">
+        <div class="hero-container">
+
+            <!-- LEFT SIDE -->
+            <div class="hero-left">
+
+                <div class="hero-badge">Welcome to Velnavi</div>
+
+                <h1 class="hero-heading">
+                    Real People.<br>
+                    Real Conversations.<br>
+                    <span class="highlight">Real Growth.</span>
+                </h1>
+
+                <div class="heading-underline"></div>
+
+                <p class="hero-description">
+                    Velnavi connects you with real people to practice English,
+                    build confidence, make friends and grow together.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="auth/login.html" class="btn btn-primary" id="getStartedBtn">
+                        Get Started - It's Free
+                        <span class="arrow">&#8594;</span>
+                    </a>
+                    <a href="auth/login.html" class="btn btn-secondary" id="watchDemoBtn">
+                        <span class="play-icon">&#9654;</span>
+                        Watch Demo 
+                        <!--  YHA WATCH DEMO KE LIYE HAME EK VIDEO ADD KRNI PADEGI JISSE LOGO KO DEMO DIKHA SKE KI KESE YE USE KRNA HOTA HAI AND CALL PAR BAAT KESE HOTI HAI  -->
+                    </a>
+                </div>
+
+            </div>
+            <!-- LEFT SIDE END -->
+
+            <!-- RIGHT SIDE -->
+            <div class="hero-right">
+
+                <div class="chat-bubble bubble-top">
+                    Let's practice <span class="bubble-highlight">English</span> together!
+                </div>
+
+                <div class="images-wrapper">
+                    <img src="assets/pretty-smiling-joyfully-female-with-fair-hair-dressed-casually-looking-with-satisfaction_176420-15187.avif"
+                        alt="Learner wearing headphones" class="person-img img-left">
+
+                    <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=500&auto=format&fit=crop&q=60"
+                        alt="Learner wearing headphones" class="person-img img-right">
+
+                    <div class="float-icon icon-people">&#128101;</div>
+                    <div class="float-icon icon-mic">&#127908;</div>
+                    <div class="float-icon icon-heart">&#10084;</div>
+                </div>
+
+                <div class="chat-bubble bubble-bottom">
+                    Great! I want to improve my <span class="bubble-highlight">speaking</span>.
+                </div>
+
+            </div>
+            <!-- RIGHT SIDE END -->
+
+        </div>
+    </section>
+    <!-- ========== HERO SECTION END ========== -->
+
+    <!-- ========== FEATURES ROW START ========== --> 
+      <section class="sec-line" style="height: 2px; background-color: #0342eda9; width: 100%; margin-top: 2px;" ></section>
+    <section class="features-row">
+        <div class="features-container">
+
+            <div class="feature-box">
+                <div class="feature-icon">&#128172;</div>
+                <div class="feature-title">Practice English</div>
+                <div class="feature-desc">Have real conversations on any topic</div>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon">&#128101;</div>
+                <div class="feature-title">Make Friends</div>
+                <div class="feature-desc">Connect with learners from around the world</div>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon">&#128218;</div>
+                <div class="feature-title">Learn Together</div>
+                <div class="feature-desc">Share knowledge and improve together</div>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon">&#128200;</div>
+                <div class="feature-title">Track Progress</div>
+                <div class="feature-desc">Track your growth and achievements daily</div>
+            </div>
+
+        </div>
+    </section>
+    <!-- ========== FEATURES ROW END ========== -->
+
+    <!-- ========== HOW IT WORKS (ANIMATED) START ========== -->
+     
+      <section class="sec-line" style="height: 2px; background-color: #0342eda9; width: 100%; margin-bottom: 2px;" ></section>
+    <section class="how-it-works" id="How-It-Works">
+        <div class="how-it-works-container">
+
+            <div class="section-badge">How It Works</div>
+            <h2 class="section-heading">What is Velnavi?</h2>
+            <p class="section-subtext">
+                Velnavi is a platform that helps you become a confident English speaker
+                by connecting you directly with real people for live conversations. No
+                boring lessons, no grammar drills - just genuine practice that builds
+                real speaking confidence over time.
+            </p>
+
+            <div class="steps-scroll-wrapper">
+
+                <div class="step-row" data-animate>
+                    <div class="step-text">
+                        <div class="step-number">1</div>
+                        <div class="step-title">Create Your Profile</div>
+                        <div class="step-desc">
+                            Start by telling us a little about yourself - your native language,
+                            your current English level, and the topics you're most interested
+                            in practicing. This helps us understand exactly what kind of
+                            conversations will help you improve the fastest.
+                        </div>
+                    </div>
+                    <div class="step-image">
+                        <img src="assets/profile.jpg" alt="Create Profile">
+                    </div>
+                </div>
+
+                <div class="step-row reverse" data-animate>
+                    <div class="step-text">
+                        <div class="step-number">2</div>
+                        <div class="step-title">Find a Partner</div>
+                        <div class="step-desc">
+                            Once you're ready, Velnavi matches you with a real person during
+                            our daily practice window. Our matching considers your level and
+                            interests, so you always end up talking to someone who's a good
+                            fit for a meaningful conversation.
+                        </div>
+                    </div>
+                    <div class="step-image">
+                        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=600&auto=format&fit=crop&q=60"
+                            alt="Find Partner">
+                    </div>
+                </div>
+
+                <div class="step-row" data-animate>
+                    <div class="step-text">
+                        <div class="step-number">3</div>
+                        <div class="step-title">Start Talking</div>
+                        <div class="step-desc">
+                            Jump into a focused 20-minute voice conversation with your matched
+                            partner. There's no pressure to be perfect - the goal is simply
+                            to speak, listen, and get comfortable expressing yourself in
+                            English, just like a real conversation with a friend.
+                        </div>
+                    </div>
+                    <div class="step-image">
+                        <img src="assets/talkimage.jpg" alt="Start Talking">
+                    </div>
+                </div>
+
+                <div class="step-row reverse" data-animate>
+                    <div class="step-text">
+                        <div class="step-number">4</div>
+                        <div class="step-title">Track Your Growth</div>
+                        <div class="step-desc">
+                            After every conversation, Velnavi keeps track of your progress -
+                            how many sessions you've completed, total minutes practiced, and
+                            your daily streak. Watching these numbers grow is a great way to
+                            stay motivated and see how far you've come.
+                        </div>
+                    </div>
+                    <div class="step-image">
+                        <img src="assets/track.avif" alt="Track Growth">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- ========== HOW IT WORKS END ========== -->
+   
+
+    <!-- ===========================================================
+     BOTTOM-SECTIONS.HTML
+     Ye teen sections hain: CTA Banner, FAQ, Footer
+     Isko apni index.html ke andar "How It Works" section ke
+     TURANT BAAD, aur <script src="js/script.js"> se PEHLE paste karo.
+     =========================================================== -->
+
+    <!-- ========== CTA BANNER START ========== --> 
+       <section class="sec-line" style="height: 3px; background-color: #020202; width: 100%; margin-bottom: 2px;" ></section>
+    <section class="cta-banner">
+        <div class="cta-banner-container">
+
+            <div class="cta-text">
+                <h2 class="cta-heading">Ready to Start Your Journey?</h2>
+                <p class="cta-subtext">Join Velnavi today and start practicing English with real people!</p>
+                <a href="auth/signup.html" class="btn btn-cta">
+                    Get Started - It's Free <span class="arrow">&#8594;</span>
+                </a>
+            </div>
+
+            <div class="cta-image">
+                <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?w=800&auto=format&fit=crop&q=60"
+                    alt="Group of friends practicing English together">
+            </div>
+
+        </div>
+    </section>
+    <!-- ========== CTA BANNER END ========== -->
+
+    <!-- ========== FAQ SECTION START ========== --> 
+    <section class="sec-line" style="height: 3px; background-color: #020202; width: 100%; margin-top: 2px;" ></section>
+    <section class="faq-section">
+        <div class="faq-container">
+
+            <div class="faq-header">
+                <h2 class="faq-heading">Frequently Asked Questions</h2>
+                <a href="#" class="faq-view-all">View All FAQs <span class="arrow">&#8594;</span></a>
+            </div>
+
+            <div class="faq-list">
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How does Velnavi matching work?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            Velnavi matches you with a real person based on your English
+                            level, native language and the topics you're interested in.
+                            Matching is active during our daily 6-8 PM practice window, so
+                            everyone finds a partner around the same time.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Is Velnavi really free to use?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            Yes! Velnavi is completely free during our launch phase. Every
+                            feature - profile setup, matching, and voice conversations - is
+                            available at no cost while we grow our community.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Can I choose my conversation partner?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            Right now, Velnavi automatically matches you with a suitable
+                            partner based on your level and interests to keep things simple
+                            and fast. The ability to pick a specific partner is something
+                            we're planning for a future update.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What if I'm a complete beginner in English?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            That's exactly who Velnavi is built for. During onboarding, you
+                            tell us your English level, and we match you with a partner
+                            who's a good fit - so beginners aren't thrown into advanced
+                            conversations.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What happens if my partner doesn't show up?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            If a match doesn't connect, you can simply try "Find Partner"
+                            again during the active practice window. We're also working on
+                            having a few dedicated practice partners always available so a
+                            room is never empty.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- ========== FAQ SECTION END ========== -->
+
+    <!-- ========== FOOTER START ========== --> 
+       <section class="sec-line" style="height: 2px; background-color: #011bfe; width: 100%; margin-bottom: 3px;" ></section>
+    <footer class="site-footer">
+        <div class="footer-container">
+
+            <div class="footer-col footer-brand">
+                <div class="footer-logo">
+                    <img src="assets/logo.jpg" alt="Velnavi Logo" class="footer-logo-img">
+                    <span class="footer-logo-text">Velnavi</span>
+                </div>
+                <p class="footer-tagline">Real people. Real conversations.<br>Real growth.</p>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Twitter">&#128038;</a>
+                    <a href="#" aria-label="Facebook">&#128100;</a>
+                    <a href="#" aria-label="Instagram">&#128247;</a>
+                    <a href="#" aria-label="LinkedIn">&#128188;</a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Product</h4>
+                <ul>
+                    <li><a href="#">How It Works</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col footer-newsletter">
+                <h4>Newsletter</h4>
+                <p>Get tips and updates</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Velnavi. All rights reserved.</p>
+        </div>
+    </footer> 
+
+    <!-- ========== FOOTER END ========== -->
+
+    <script src="../CODE/homepage.js/script.js"></script> 
+    <script src="../CODE/homepage.js/bottom.js"></script>
+</body>
+
+</html>
